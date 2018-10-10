@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Main from './Main.js';
 import Dashboard from './Dashboard.js';
-import Class from './Class.js';
+import ClassTable from './ClassTable.js';
 import Nav from './Nav.js';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
@@ -18,7 +18,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route  path='/Dashboard' component={Dashboard} />
-            <Route path='/Class/:id' component={Class} />
+            <Route path='/Class/:id' component={ClassTable} />
             <Route exact path='/' component={Main} />
           </Switch>
         </Router>

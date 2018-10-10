@@ -20,7 +20,7 @@ function CenteredGrid(props) {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={0}>
+      <Grid container>
         <Grid item xs={5} >
           <div className="hero-image">
           <div className="overlay"></div>
@@ -31,10 +31,9 @@ function CenteredGrid(props) {
           <div className="hero-block">
           </div>
         </Grid>
+      </Grid>
 
-
-
-
+      <Grid container>
         <Grid item xs={7}>
           <div className="node">
             <div className="intro-text">
@@ -51,8 +50,9 @@ function CenteredGrid(props) {
           <div className="node-image-about">
           </div>
         </Grid>
+      </Grid>
 
-
+      <Grid container>
         <Grid item xs={12}>
           <div className="cta">
             <div className="cta-title">Get Started</div>
